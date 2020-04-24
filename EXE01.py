@@ -1,14 +1,12 @@
 import sqlite3
-conn = sqlite3.connect('EXE01.db')
+conn = sqlite3.connect('ex1.db')
 
 c = conn.cursor()
-
 c.execute('''CREATE TABLE ex1(
                 id INTEGER,
-                nome VARCHAR NOT NULL,
-                email VARCHAR)'''
-                )
+                nome TEXT NOT NULL,
+                email TEXT)''')
 
-c.execute("INSERT INTO ex1 VALUES (1,'Eduardo','eduardo@cont.com)")
+c.execute("INSERT INTO ex1 VALUES (1,'Eduardo','eduardo@cont.com')")
 conn.commit()
 conn.close()
