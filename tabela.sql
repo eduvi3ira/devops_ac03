@@ -1,0 +1,5 @@
+CREATE TABLE ex1(
+    id INT PRIMARY KEY,
+    nome VARCHAR(30) NOT NULL,
+    emial VARCHAR(30)
+)
